@@ -7,6 +7,8 @@ import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKAccessTokenTracker;
 import com.vk.sdk.VKSdk;
 
+import ru.sfedu.lereena.Activities.FeedActivity;
+
 public class VkSDKInitializeClass extends android.app.Application {
 
     VKAccessTokenTracker vkAccessTokenTracker = new VKAccessTokenTracker() {

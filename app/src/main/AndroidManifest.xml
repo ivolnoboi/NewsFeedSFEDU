@@ -3,28 +3,32 @@
     package="ru.sfedu.lereena">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permissoin.ACCESS_WIFI_STATE"/>
 
     <application
+        android:name=".VkSDKInitializeClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".VkSDKInitializeClass"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"> <!-- name: - для инициализации VkSDK-->
         <activity
-            android:name=".FeedActivity"
-            android:configChanges="orientation|screenSize"
+            android:name=".Activities.InitActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Activities.FeedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Activities.NewsDetailActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.vk.sdk.VKServiceActivity"
             android:label="ServiceActivity"
