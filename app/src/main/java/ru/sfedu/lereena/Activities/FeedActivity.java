@@ -21,11 +21,13 @@ import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
+import com.vk.sdk.api.methods.VKApiGroups;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -105,8 +107,11 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initializeURLsArr() {
-        String pathToFile = getString(R.string.path_to_url_file);
-        addresses = CSVReader.CSVToArray(pathToFile, ";");
+        /*String pathToFile = getString(R.string.path_to_url_file);
+        addresses = CSVReader.CSVToArray("/raw/vkgroupsids.csv", ";");*/
+        InputStream inputStream = getResources().openRawResource(R.raw.vkgroupsids);
+        CSVReader csvReader = new CSVReader(inputStream);
+        List urlsList = csvReader.read();
     }
 
     private void initHandler() {
@@ -137,7 +142,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
                 lastVisibleItem = llm.findLastVisibleItemPosition();//какая позиция последнего элемента на экране
                 if (!startedDownload && lastVisibleItem == totalItemCnt - 1 && !inProcess) {
                     startedDownload = true;
-                    downloadMoreNews();
+                    downloadMoreNews("mmcs_sfedu");
                 } else {
                     startedDownload = false;
                 }
@@ -191,6 +196,13 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         request = new VKRequest("newsfeed.get",
                 VKParameters.from(VKApiConst.FILTERS, "post",
                         VKApiConst.COUNT, COUNT, "start_from", startValue));
+        downloadNews();
+    }
+
+    private void downloadMoreNews(String groupID) {
+        handler.sendEmptyMessage(DWNLD);
+        fromStart = false;
+        request = new VKApiGroups().getById(VKParameters.from("group_ids", groupID));
         downloadNews();
     }
 
