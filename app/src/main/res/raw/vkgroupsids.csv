@@ -1,28 +1,28 @@
-nil;Университет;Академия архитектуры и искусств;Академия биологии и биотехнологии;Академия психологии и педагогики;Академия физической культуры и спорта;Инженерно-технологическая академия; Институт высоких технологий и пьезотехники;  Институт компьютерных технологий и информационной безопасности;Институт нанотехнологий, электроники и приборостроения; Институт радиотехнических систем и управления;Институт управления в экономических, экологических и социальных системах;Высшая школа бизнеса;Институт истории и международных отношений;Институт математики, механики и компьютерных наук им. И.И. Воровича;Институт наук о Земле;Институт социологии и регионоведения;Институт филологии, журналистики и межкультурной коммуникации;Институт философии и социально-политических наук;Факультет управления;Факультет физический;Факультет химический;Факультет экономический;Факультет юридический;Лицей;Колледж прикладного профессионального образования;Филиал ЮФУ в г. Новошахтинске
-nil;ЮФУ;Академ Архит. (ААИ);БиоФак (АББ);ПсихФак (АПП);ФизКультФак (АФКС);ИТА;ФВТ (ИВТП);ИКТИБ;ИНЭП;ИРТСУ;ИУЭС;ВШБ;ИстФак (ИИМО);МехМат (ИММиКН);ГеоФак (ИНЗ);ИСиР;ФилФак (ИФЖиМКК);ИФСПН;Фак-тет упр.;ФизФак;ХимФак;ЭкномФак;ЮрФак;Лицей;Колледж;Новошахтинск
-Основная;sfedu_official;aapxu;club763504;club386000;academsport.sfedu;nil;sfedu_fvt;ictis_sfedu;inep_sfedu;irtsu_sfedu;iusees_sfedu;hsb.sfedu;sfedu_history;mmcs.official;ogbarannikova;isirsfedu;philologysfedu;ipsps_sfedu;sfedufup;fizfaksfu;nil;sfedu.econom;urfak.sfedu;club162420341;nil;nshf_sfu
-ПрофКом;studprof.sfedu;club115790120;nil;nil;nil;club132819801;studprofkom_ivtipt;nil;nil;nil;nil;profkomhsb;profsoyziimo;mmcs_profkom;nil;nil;profiffj;studprofcomffk;nil;studprofff;nil;club38488618;profoffice_lawfaculty;nil;nil;nil
-СИЦ;sfedu_sic;nil;nil;nil;academsportsfedu;sic_sfedu_ita;nil;nil;nil;nil;nil;information_hsb;public89520513;public142132054;nil;sic_isir;nil;nil;nil;nil;chemistrysic;sic_econom;club109529363;nil;nil;nil
-Культура и Творчество;sfedu_kultura;cultureaai;nil;nil;nil;studclub_tgn;fvt_active;nil;nil;nil;nil;nil;istorikisfedy;mmcs_creativity;nil;nil;nil;nil;nil;nil;nil;econ.sfedu;nil;nil;nil;nil
-Спорт;ssc_sfedu;nil;nil;nil;nil;club101308251;nil;nil;nil;nil;nil;nil;club68959879;mexmat_sport;nil;ssc_isir;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-СтудСовет;oso.sfedu;studaktivaai;nil;nil;nil;ss_eta;nil;nil;nil;nil;nil;nil;sic_iimo;mmcs_council;nil;nil;club69326394;because_ifispn;nil;studsovetphysfac;studsovet_chemistry;sfedu.econ;nil;nil;sfedu_lol;nil
-Подслушано;overhearsfedu;nil;nil;nil;public156038241;nil;nil;nil;nil;nil;nil;nil;nil;mmcs_sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Научное Сообщество;nil;club114777260;nil;nil;nil;sno_ita_sfu;nil;nil;nil;nil;nil;nil;nil;mmcs_teachingcouncil;nil;nil;nil;philos_culture;nil;nil;nil;nil;lawsfedu;nil;nil;nil
-Волонтёрство;sfedu_volunteer;club109609244;nil;nil;nil;volonter_eta;nil;nil;club128819074;nil;nil;nil;vol.iimosfedu;nil;nil;nil;club81593809;volunteerifispn;nil;nil;nil;vol_v_ritme;volonterufo;nil;nil;nil
-Центр Карьеры;sfeducareer;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-SFEDUMEDIA;sfedumedia;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Цитаты преподавателей;sfeduquotes;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-ИнтерКлуб;interclubsfu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-УВЦ;uvc.sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-"Турклуб ""Ковчег""";tk_kovcheg;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Ботанический сад;bg.sfedu_official;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-КиберСпорт;esports_sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Детская ХудШкола;izocenter_sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Лига КВН;club15341149;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Штаб СтудОтрядов;rsosfu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-MMDANCE;mmdance;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-UNI TRAVEL;rd_unitravel;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Преактум;nil;nil;nil;nil;nil;preactum.sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Клуб интеллектуальных игр;nil;nil;nil;nil;nil;intellect_ita_sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Команда Enactus;nil;nil;nil;nil;nil;enactus.sfedu;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
-Математическая школа;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;mmcs_math;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil;nil
+п»ї,РЈРЅРёРІРµСЂСЃРёС‚РµС‚,РђРєР°РґРµРјРёСЏ Р°СЂС…РёС‚РµРєС‚СѓСЂС‹ Рё РёСЃРєСѓСЃСЃС‚РІ,РђРєР°РґРµРјРёСЏ Р±РёРѕР»РѕРіРёРё Рё Р±РёРѕС‚РµС…РЅРѕР»РѕРіРёРё,РђРєР°РґРµРјРёСЏ РїСЃРёС…РѕР»РѕРіРёРё Рё РїРµРґР°РіРѕРіРёРєРё,РђРєР°РґРµРјРёСЏ С„РёР·РёС‡РµСЃРєРѕР№ РєСѓР»СЊС‚СѓСЂС‹ Рё СЃРїРѕСЂС‚Р°,РРЅР¶РµРЅРµСЂРЅРѕ-С‚РµС…РЅРѕР»РѕРіРёС‡РµСЃРєР°СЏ Р°РєР°РґРµРјРёСЏ, РРЅСЃС‚РёС‚СѓС‚ РІС‹СЃРѕРєРёС… С‚РµС…РЅРѕР»РѕРіРёР№ Рё РїСЊРµР·РѕС‚РµС…РЅРёРєРё,  РРЅСЃС‚РёС‚СѓС‚ РєРѕРјРїСЊСЋС‚РµСЂРЅС‹С… С‚РµС…РЅРѕР»РѕРіРёР№ Рё РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕР№ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё,РРЅСЃС‚РёС‚СѓС‚ РЅР°РЅРѕС‚РµС…РЅРѕР»РѕРіРёР№, СЌР»РµРєС‚СЂРѕРЅРёРєРё Рё РїСЂРёР±РѕСЂРѕСЃС‚СЂРѕРµРЅРёСЏ,В РРЅСЃС‚РёС‚СѓС‚ СЂР°РґРёРѕС‚РµС…РЅРёС‡РµСЃРєРёС… СЃРёСЃС‚РµРј Рё СѓРїСЂР°РІР»РµРЅРёСЏ,РРЅСЃС‚РёС‚СѓС‚ СѓРїСЂР°РІР»РµРЅРёСЏ РІ СЌРєРѕРЅРѕРјРёС‡РµСЃРєРёС…, СЌРєРѕР»РѕРіРёС‡РµСЃРєРёС… Рё СЃРѕС†РёР°Р»СЊРЅС‹С… СЃРёСЃС‚РµРјР°С…,Р’С‹СЃС€Р°СЏ С€РєРѕР»Р° Р±РёР·РЅРµСЃР°,РРЅСЃС‚РёС‚СѓС‚ РёСЃС‚РѕСЂРёРё Рё РјРµР¶РґСѓРЅР°СЂРѕРґРЅС‹С… РѕС‚РЅРѕС€РµРЅРёР№,РРЅСЃС‚РёС‚СѓС‚ РјР°С‚РµРјР°С‚РёРєРё, РјРµС…Р°РЅРёРєРё Рё РєРѕРјРїСЊСЋС‚РµСЂРЅС‹С… РЅР°СѓРє РёРј. Р.Р. Р’РѕСЂРѕРІРёС‡Р°,РРЅСЃС‚РёС‚СѓС‚ РЅР°СѓРє Рѕ Р—РµРјР»Рµ,РРЅСЃС‚РёС‚СѓС‚ СЃРѕС†РёРѕР»РѕРіРёРё Рё СЂРµРіРёРѕРЅРѕРІРµРґРµРЅРёСЏ,РРЅСЃС‚РёС‚СѓС‚ С„РёР»РѕР»РѕРіРёРё, Р¶СѓСЂРЅР°Р»РёСЃС‚РёРєРё Рё РјРµР¶РєСѓР»СЊС‚СѓСЂРЅРѕР№ РєРѕРјРјСѓРЅРёРєР°С†РёРё,РРЅСЃС‚РёС‚СѓС‚ С„РёР»РѕСЃРѕС„РёРё Рё СЃРѕС†РёР°Р»СЊРЅРѕ-РїРѕР»РёС‚РёС‡РµСЃРєРёС… РЅР°СѓРє,Р¤Р°РєСѓР»СЊС‚РµС‚ СѓРїСЂР°РІР»РµРЅРёСЏ,Р¤Р°РєСѓР»СЊС‚РµС‚ С„РёР·РёС‡РµСЃРєРёР№,Р¤Р°РєСѓР»СЊС‚РµС‚ С…РёРјРёС‡РµСЃРєРёР№,Р¤Р°РєСѓР»СЊС‚РµС‚ СЌРєРѕРЅРѕРјРёС‡РµСЃРєРёР№,Р¤Р°РєСѓР»СЊС‚РµС‚ СЋСЂРёРґРёС‡РµСЃРєРёР№,Р›РёС†РµР№,РљРѕР»Р»РµРґР¶ РїСЂРёРєР»Р°РґРЅРѕРіРѕ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ,Р¤РёР»РёР°Р» Р®Р¤РЈ РІ Рі. РќРѕРІРѕС€Р°С…С‚РёРЅСЃРєРµ
+,Р®Р¤РЈ,РђРєР°РґРµРј РђСЂС…РёС‚. (РђРђР),Р‘РёРѕР¤Р°Рє (РђР‘Р‘),РџСЃРёС…Р¤Р°Рє (РђРџРџ),Р¤РёР·РљСѓР»СЊС‚Р¤Р°Рє (РђР¤РљРЎ),РРўРђ,Р¤Р’Рў (РР’РўРџ),РРљРўРР‘,РРќР­Рџ,РР РўРЎРЈ,РРЈР­РЎ,Р’РЁР‘,РСЃС‚Р¤Р°Рє (РРРњРћ),РњРµС…РњР°С‚ (РРњРњРёРљРќ),Р“РµРѕР¤Р°Рє (РРќР—),РРЎРёР ,Р¤РёР»Р¤Р°Рє (РР¤Р–РёРњРљРљ),РР¤РЎРџРќ,Р¤Р°Рє-С‚РµС‚ СѓРїСЂ.,Р¤РёР·Р¤Р°Рє,РҐРёРјР¤Р°Рє,Р­РєРЅРѕРјР¤Р°Рє,Р®СЂР¤Р°Рє,Р›РёС†РµР№,РљРѕР»Р»РµРґР¶,РќРѕРІРѕС€Р°С…С‚РёРЅСЃРє
+РћСЃРЅРѕРІРЅР°СЏ,sfedu_official,aapxu,club763504,club386000,academsport.sfedu,,sfedu_fvt,ictis_sfedu,inep_sfedu,irtsu_sfedu,iusees_sfedu,hsb.sfedu,sfedu_history,mmcs.official,ogbarannikova,isirsfedu,philologysfedu,ipsps_sfedu,sfedufup,fizfaksfu,,sfedu.econom,urfak.sfedu,club162420341,,nshf_sfu
+РџСЂРѕС„РљРѕРј,studprof.sfedu,club115790120,,,,club132819801,studprofkom_ivtipt,,,,,profkomhsb,profsoyziimo,mmcs_profkom,,,profiffj,studprofcomffk,,studprofff,,club38488618,profoffice_lawfaculty,,,
+РЎРР¦,sfedu_sic,,,,academsportsfedu,sic_sfedu_ita,,,,,,information_hsb,public89520513,public142132054,,sic_isir,,,,,chemistrysic,sic_econom,club109529363,,,
+РљСѓР»СЊС‚СѓСЂР° Рё РўРІРѕСЂС‡РµСЃС‚РІРѕ,sfedu_kultura,cultureaai,,,,studclub_tgn,fvt_active,,,,,,istorikisfedy,mmcs_creativity,,,,,,,,econ.sfedu,,,,
+РЎРїРѕСЂС‚,ssc_sfedu,,,,,club101308251,,,,,,,club68959879,mexmat_sport,,ssc_isir,,,,,,,,,,
+РЎС‚СѓРґРЎРѕРІРµС‚,oso.sfedu,studaktivaai,,,,ss_eta,,,,,,,sic_iimo,mmcs_council,,,club69326394,because_ifispn,,studsovetphysfac,studsovet_chemistry,sfedu.econ,,,sfedu_lol,
+РџРѕРґСЃР»СѓС€Р°РЅРѕ,overhearsfedu,,,,public156038241,,,,,,,,,mmcs_sfedu,,,,,,,,,,,,
+РќР°СѓС‡РЅРѕРµ РЎРѕРѕР±С‰РµСЃС‚РІРѕ,,club114777260,,,,sno_ita_sfu,,,,,,,,mmcs_teachingcouncil,,,,philos_culture,,,,,lawsfedu,,,
+Р’РѕР»РѕРЅС‚С‘СЂСЃС‚РІРѕ,sfedu_volunteer,club109609244,,,,volonter_eta,,,club128819074,,,,vol.iimosfedu,,,,club81593809,volunteerifispn,,,,vol_v_ritme,volonterufo,,,
+Р¦РµРЅС‚СЂ РљР°СЂСЊРµСЂС‹,sfeducareer,,,,,,,,,,,,,,,,,,,,,,,,,
+SFEDUMEDIA,sfedumedia,,,,,,,,,,,,,,,,,,,,,,,,,
+Р¦РёС‚Р°С‚С‹ РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№,sfeduquotes,,,,,,,,,,,,,,,,,,,,,,,,,
+РРЅС‚РµСЂРљР»СѓР±,interclubsfu,,,,,,,,,,,,,,,,,,,,,,,,,
+РЈР’Р¦,uvc.sfedu,,,,,,,,,,,,,,,,,,,,,,,,,
+"РўСѓСЂРєР»СѓР± ""РљРѕРІС‡РµРі""",tk_kovcheg,,,,,,,,,,,,,,,,,,,,,,,,,
+Р‘РѕС‚Р°РЅРёС‡РµСЃРєРёР№ СЃР°Рґ,bg.sfedu_official,,,,,,,,,,,,,,,,,,,,,,,,,
+РљРёР±РµСЂРЎРїРѕСЂС‚,esports_sfedu,,,,,,,,,,,,,,,,,,,,,,,,,
+Р”РµС‚СЃРєР°СЏ РҐСѓРґРЁРєРѕР»Р°,izocenter_sfedu,,,,,,,,,,,,,,,,,,,,,,,,,
+Р›РёРіР° РљР’Рќ,club15341149,,,,,,,,,,,,,,,,,,,,,,,,,
+РЁС‚Р°Р± РЎС‚СѓРґРћС‚СЂСЏРґРѕРІ,rsosfu,,,,,,,,,,,,,,,,,,,,,,,,,
+MMDANCE,mmdance,,,,,,,,,,,,,,,,,,,,,,,,,
+UNI TRAVEL,rd_unitravel,,,,,,,,,,,,,,,,,,,,,,,,,
+РџСЂРµР°РєС‚СѓРј,,,,,,preactum.sfedu,,,,,,,,,,,,,,,,,,,,
+РљР»СѓР± РёРЅС‚РµР»Р»РµРєС‚СѓР°Р»СЊРЅС‹С… РёРіСЂ,,,,,,intellect_ita_sfedu,,,,,,,,,,,,,,,,,,,,
+РљРѕРјР°РЅРґР° Enactus,,,,,,enactus.sfedu,,,,,,,,,,,,,,,,,,,,
+РњР°С‚РµРјР°С‚РёС‡РµСЃРєР°СЏ С€РєРѕР»Р°,,,,,,,,,,,,,,mmcs_math,,,,,,,,,,,,

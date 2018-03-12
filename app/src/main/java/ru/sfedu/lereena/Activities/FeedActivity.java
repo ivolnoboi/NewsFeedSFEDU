@@ -16,18 +16,17 @@ import android.widget.ProgressBar;
 
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.vk.sdk.VKScope;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
 import com.vk.sdk.api.VKRequest;
 import com.vk.sdk.api.VKResponse;
-import com.vk.sdk.api.methods.VKApiGroups;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -37,7 +36,6 @@ import java.util.Locale;
 import java.util.Map;
 
 import ru.sfedu.lereena.Adapters.NewsAdapter;
-import ru.sfedu.lereena.CSVReader;
 import ru.sfedu.lereena.ModelItem;
 import ru.sfedu.lereena.R;
 import ru.sfedu.lereena.RecyclerItemClickListener;
@@ -59,6 +57,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
     private int totalItemCnt, lastVisibleItem;
     private Thread thread;
 
+    private String[][] urls;
     private List<ModelItem> items;
     private String[] scope = new String[]{VKScope.GROUPS, VKScope.PAGES, VKScope.NOTIFICATIONS, VKScope.NOTIFY};
 
@@ -88,6 +87,9 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
                 })*/
                 .build();
 
+        initializeURLsArr();
+        initializeDrawerItems(result);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +100,6 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
 
         llm = new LinearLayoutManager(this);
 
-        initializeURLsArr();
         initHandler();
         initRecV();
         initializeViews();
@@ -106,12 +107,35 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         updateAdapter();
     }
 
+    private void initializeDrawerItems(Drawer drawer) {
+        for (int i = 0; i < 9; i++) {
+            drawer.addItem(new PrimaryDrawerItem().withIdentifier(i).withName(urls[0][i]));
+        }
+    }
+
     private void initializeURLsArr() {
-        /*String pathToFile = getString(R.string.path_to_url_file);
-        addresses = CSVReader.CSVToArray("/raw/vkgroupsids.csv", ";");*/
-        InputStream inputStream = getResources().openRawResource(R.raw.vkgroupsids);
-        CSVReader csvReader = new CSVReader(inputStream);
-        List urlsList = csvReader.read(";");
+
+        //String[][] urls = new String[28][27];
+
+        /*CSVReader reader = null;
+        try {
+            reader = new CSVReader(
+                    new FileReader("\\assets\\vkgroupsids.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        String[] line;
+        try {
+            for (int i = 0; i < 28; i++) {
+                while ((line = reader.readNext()) != null) {
+                    urls[i] = line;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+*/
+        urls = new String[][] {{"Основная", "ПрофКом", "СИЦ", "Культура и творчество", "Спорт", "СтудСовет", "Подслушано", "Научное сообщество", "Математическая школа"},{"mmcs.official", "mmcs_profkom", "public142132054", "mmcs_creativity", "mexmat_sport", "mmcs_council", "mmcs_sfedu", "mmcs_teachingcouncil", "mmcs_math"}};
     }
 
     private void initHandler() {
@@ -142,7 +166,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
                 lastVisibleItem = llm.findLastVisibleItemPosition();//какая позиция последнего элемента на экране
                 if (!startedDownload && lastVisibleItem == totalItemCnt - 1 && !inProcess) {
                     startedDownload = true;
-                    downloadMoreNews("mmcs_sfedu");
+                    downloadMoreNews();
                 } else {
                     startedDownload = false;
                 }
@@ -199,12 +223,12 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         downloadNews();
     }
 
-    private void downloadMoreNews(String groupID) {
+/*    private void downloadMoreNews(String groupID) {
         handler.sendEmptyMessage(DWNLD);
         fromStart = false;
-        request = new VKApiGroups().getById(VKParameters.from("group_ids", groupID));
+        request = new VKApiGroups().getById(VKParameters.from("group_ids", groupID, VKApiConst.COUNT, COUNT, "start_from", startValue));
         downloadNews();
-    }
+    }*/
 
     private void downloadNews() {
         if (!inProcess) {
