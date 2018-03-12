@@ -13,7 +13,7 @@
         android:layout_gravity="bottom"
         android:visibility="visible"
         android:background="@color/vk_light_color"
-        android:text="Авторизоваться" />
+        android:text="Войти с помощью Вконтакте" />
 
     <ImageView
         android:id="@+id/logo"

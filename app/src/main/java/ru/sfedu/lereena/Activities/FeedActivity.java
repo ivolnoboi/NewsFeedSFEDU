@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.mikepenz.materialdrawer.Drawer;
+import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.vk.sdk.VKScope;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
@@ -34,6 +35,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import ru.sfedu.lereena.Adapters.NewsAdapter;
+import ru.sfedu.lereena.CSVReader;
 import ru.sfedu.lereena.ModelItem;
 import ru.sfedu.lereena.R;
 import ru.sfedu.lereena.RecyclerItemClickListener;
@@ -46,6 +48,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
     private boolean startedDownload, fromStart, inProcess;
     private VKRequest request;
     private String startValue;
+    private String[][] addresses;
     private ProgressBar progressBar;
     private Handler handler;
     private RecyclerView recView;
@@ -63,23 +66,47 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_feed);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //createDrawerSections();
+        Drawer result = new DrawerBuilder()
+                .withActivity(this)
+                .withToolbar(toolbar)
+                .withActionBarDrawerToggle(true)
+                .withHeader(R.layout.drawer_header)
+                .addDrawerItems(
+
+                )
+                /*.withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                    @Override
+                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+                        InputMethodManager inputMethodManager = (InputMethodManager) FeedActivity.this.getSystemService(Activity.INPUT_METHOD_SERVICE);
+                        inputMethodManager.hideSoftInputFromWindow(FeedActivity.this.getCurrentFocus().getWindowToken(), 0);
+                    }
+                })*/
+                .build();
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
             }
         });
 
         llm = new LinearLayoutManager(this);
 
+        initializeURLsArr();
         initHandler();
         initRecV();
         initializeViews();
         initializeNews();
         updateAdapter();
+    }
+
+    private void initializeURLsArr() {
+        String pathToFile = getString(R.string.path_to_url_file);
+        addresses = CSVReader.CSVToArray(pathToFile, ";");
     }
 
     private void initHandler() {
@@ -275,5 +302,6 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
+
 }
 

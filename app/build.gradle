@@ -8,6 +8,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -30,4 +31,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.vk:androidsdk:1.6.9'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile "com.opencsv:opencsv:4.0"
+    implementation("com.mikepenz:materialdrawer:6.0.6@aar") {
+        transitive = true
+    }
+    implementation "com.android.support:support-annotations:27.1.0"
 }

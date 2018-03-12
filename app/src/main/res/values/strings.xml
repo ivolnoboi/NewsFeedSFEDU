@@ -4,4 +4,7 @@
     <string name="total_likes">"Total likes = "</string>
 
     <integer name="com_vk_sdk_AppId">6403322</integer>
+
+    <string name="path_to_url_file">http://mihaxxx.16mb.com/vkgroupsids.csv</string>
+    <string name="SFEDU">Университет</string>
 </resources>
