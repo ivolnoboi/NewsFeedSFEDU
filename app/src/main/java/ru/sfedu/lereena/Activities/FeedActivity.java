@@ -111,7 +111,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         addresses = CSVReader.CSVToArray("/raw/vkgroupsids.csv", ";");*/
         InputStream inputStream = getResources().openRawResource(R.raw.vkgroupsids);
         CSVReader csvReader = new CSVReader(inputStream);
-        List urlsList = csvReader.read();
+        List urlsList = csvReader.read(";");
     }
 
     private void initHandler() {
