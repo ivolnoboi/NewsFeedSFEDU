@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKCallback;
@@ -17,7 +16,7 @@ import ru.sfedu.lereena.R;
 
 public class InitActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private String[] scope = new String[]{VKScope.MESSAGES, VKScope.FRIENDS, VKScope.WALL};
+    private String[] scope = new String[]{VKScope.GROUPS, VKScope.FRIENDS, VKScope.WALL};
     private Button loginButton;
 
     @Override
@@ -25,8 +24,14 @@ public class InitActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_init);
 
-        ImageView logo = findViewById(R.id.logo);
-        logo.setImageResource(R.drawable.background);
+        // Пропускает логин если уже залогинено
+        if (VKSdk.isLoggedIn()) {
+            InitActivity.this.startActivity(new Intent(InitActivity.this, FeedActivity.class));
+        }
+
+        // TODO сделать что-нибудь с фоном логина
+        //ImageView logo = findViewById(R.id.logo);
+        //logo.setImageResource(R.drawable.background);
 
         loginButton = findViewById(R.id.login_button);
         loginButton.setOnClickListener(this);
