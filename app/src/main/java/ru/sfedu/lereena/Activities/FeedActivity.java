@@ -1,5 +1,7 @@
 package ru.sfedu.lereena.Activities;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +19,7 @@ import android.widget.ProgressBar;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.opencsv.CSVReader;
 import com.vk.sdk.VKScope;
 import com.vk.sdk.api.VKApiConst;
 import com.vk.sdk.api.VKParameters;
@@ -27,6 +30,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -48,7 +53,6 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
     private boolean startedDownload, fromStart, inProcess;
     private VKRequest request;
     private String startValue;
-    private String[][] addresses;
     private ProgressBar progressBar;
     private Handler handler;
     private RecyclerView recView;
@@ -69,7 +73,6 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //createDrawerSections();
         Drawer result = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(toolbar)
@@ -87,7 +90,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
                 })*/
                 .build();
 
-        initializeURLsArr();
+        initializeURLsArr(this);
         initializeDrawerItems(result);
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -108,36 +111,33 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initializeDrawerItems(Drawer drawer) {
-        for (int i = 0; i < 9; i++) {
+        for (int i = 1; i < urls[0].length; i++) {
             drawer.addItem(new PrimaryDrawerItem().withIdentifier(i).withName(urls[0][i]));
         }
     }
 
-    private void initializeURLsArr() {
+    private void initializeURLsArr(Context context) {
 
-        //String[][] urls = new String[28][27];
+        urls = new String[28][27];
 
-        /*CSVReader reader = null;
-        try {
-            reader = new CSVReader(
-                    new FileReader("\\assets\\vkgroupsids.txt"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        CSVReader reader;
+        reader = new CSVReader(
+                new InputStreamReader(context.getResources().openRawResource(R.raw.vkgroupsids)));
+
         String[] line;
         try {
             for (int i = 0; i < 28; i++) {
-                while ((line = reader.readNext()) != null) {
+                    line = reader.readNext();
                     urls[i] = line;
-                }
             }
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
+
         }
-*/
-        urls = new String[][] {{"Основная", "ПрофКом", "СИЦ", "Культура и творчество", "Спорт", "СтудСовет", "Подслушано", "Научное сообщество", "Математическая школа"},{"mmcs.official", "mmcs_profkom", "public142132054", "mmcs_creativity", "mexmat_sport", "mmcs_council", "mmcs_sfedu", "mmcs_teachingcouncil", "mmcs_math"}};
     }
 
+    @SuppressLint("HandlerLeak")
     private void initHandler() {
         handler = new Handler() {
             @Override
@@ -236,6 +236,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
                 public void run() {
                     inProcess = true;
                     request.executeWithListener(new VKRequest.VKRequestListener() {
+                        @SuppressLint("UseSparseArrays")
                         @Override
                         public void onComplete(VKResponse response) {
                             super.onComplete(response);
